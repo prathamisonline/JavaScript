@@ -12,3 +12,13 @@ console.log(employees.filter((user) => user.age < 30));
 const numbers = [24, 33, 15, 13, 16, 40];
 
 console.log(`Even Numbers are: ${numbers.filter((num) => num % 2 == 0)}`);
+
+let names = ["Ram", "shyam", "Pratham", "Rahul", "Tapan", "Ramesh", "Ajay"];
+
+console.log(
+  names.filter((name) => {
+    if (name == "Rahul") {
+      return name;
+    }
+  })
+);
