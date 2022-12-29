@@ -1,4 +1,4 @@
-// const arr = [1, 2, 3, 4, 5, 6, 7];
+const arr = [1, 2, 3, 4, 5, 6, 7];
 // // console.log(arr);
 // // console.log(arr.map((num) => (num % 2 == 0 ? num * 2 : num * 1)));
 
@@ -10,3 +10,6 @@
 // };
 // console.log(arr.forEach(newdata));
 // // console.log(arr.forEach((item) => item + 5));
+arr.forEach((item) => {
+  console.log(item);
+});
