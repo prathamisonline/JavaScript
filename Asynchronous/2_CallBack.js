@@ -1,7 +1,7 @@
 console.log("hi");
 function importantAction(username, cb) {
   setTimeout(() => {
-    cd(`Good Morning ${username}`);
+    cb(`Good Morning ${username}`);
   }, 2000);
 }
 const message = importantAction("Pratham", function (message) {
