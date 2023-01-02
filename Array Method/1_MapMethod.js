@@ -1,8 +1,7 @@
 const months = ["January", "February", "March", "April"];
 
-const newArray = months.map((item) => item.toUpperCase());
-console.log(newArray);
-
+console.log(months.map((item) => item.toUpperCase()));
+console.log(months);
 const users = [
   {
     first_name: "Mike",

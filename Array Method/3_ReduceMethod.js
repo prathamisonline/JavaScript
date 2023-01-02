@@ -1,6 +1,8 @@
+// This method applies a function against an accumulator and each element in the array to reduce it to a single value.
+
 const numbers = [1, 2, 3, 4, 5, 6];
 
-console.log(numbers.reduce((acc, num) => acc + num));
+console.log(numbers.reduce((acc, num) => acc + num, 0));
 
 // subtract all numbers from first number
 // since 1st element is called as accumulator rather than currentValue
