@@ -25,8 +25,8 @@ function howIsYourDay(username, cb) {
 
 const message = importantAction("Pratham", function (message) {
   console.log(message);
-  howAreYou("Pratham", (username) => {
-    console.log(username);
+  howAreYou("Pratham", (usernameuuuu) => {
+    console.log(usernameuuuu);
     isEverthingAlright("pratham", (username) => {
       console.log(username);
       howIsYourDay("Pratham", (action) => {
