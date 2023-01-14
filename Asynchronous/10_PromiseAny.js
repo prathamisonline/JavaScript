@@ -1,3 +1,5 @@
+// It gives first fullfield promise
+
 console.log("hi");
 
 function importantAction(username) {
@@ -23,20 +25,28 @@ function importantAction3(username) {
   });
 }
 
-importantAction("Pratham")
-  .then((res) => {
-    console.log(res);
-    return importantAction2("Pratham");
-  })
-  .then((res) => {
-    console.log(res);
-    return importantAction3("Pratham");
-  })
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log("promise reject");
-  });
+// importantAction("Pratham")
+//   .then((res) => {
+//     console.log(res);
+//     return importantAction2("Pratham");
+//   })
+//   .then((res) => {
+//     console.log(res);
+//     return importantAction3("Pratham");
+//   })
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log("promise reject");
+//   });
+
+Promise.any([
+  importantAction("Pratham"),
+  importantAction2("Pratham"),
+  importantAction3("Pratham"),
+]).then((res) => {
+  console.log(res);
+});
 
 console.log("BY");

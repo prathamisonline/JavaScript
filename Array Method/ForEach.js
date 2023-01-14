@@ -15,14 +15,14 @@ const arr = [1, 2, 3, 4, 5, 6, 7];
 arr.forEach((item) => {
   console.log(item);
 });
-console.log(" ");
-arr.forEach((num) => console.log(num * 4));
-console.log(arr);
+// console.log(" ");
+// arr.forEach((num) => console.log(num * 4));
+// console.log(arr);
 
-const months = ["January", "February", "March", "April"];
+// const months = ["January", "February", "March", "April"];
 
-console.log(months.map((item) => item.toUpperCase()));
+// console.log(months.map((item) => item.toUpperCase()));
 
-console.log(months);
-months.forEach((item) => console.log(item.toUpperCase()));
-console.log(months);
+// console.log(months);
+// months.forEach((item) => console.log(item.toUpperCase()));
+// console.log(months);

@@ -4,14 +4,14 @@ function importantAction(username) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(`Good Morning ${username}`);
-    }, 2000);
+    }, 200);
   });
 }
 function importantAction2(username) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      reject(`Good evening ${username}`);
-    }, 2000);
+      resolve(`Good evening ${username}`);
+    }, 200);
   });
 }
 
@@ -19,24 +19,18 @@ function importantAction3(username) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(`Good night ${username}`);
-    }, 2000);
+    }, 200);
   });
 }
 
-importantAction("Pratham")
-  .then((res) => {
-    console.log(res);
-    return importantAction2("Pratham");
-  })
-  .then((res) => {
-    console.log(res);
-    return importantAction3("Pratham");
-  })
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log("promise reject");
-  });
+const result = async () => {
+  const message1 = await importantAction("Pratham");
+  const message2 = await importantAction2("Pratham");
+  const message3 = await importantAction3("Pratham");
+
+  console.log({ message1, message2, message3 });
+};
+
+result();
 
 console.log("BY");

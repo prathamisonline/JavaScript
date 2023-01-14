@@ -1,10 +1,22 @@
-function makeFunc() {
-  var name = "Pratham";
-  function displayName() {
-    console.log(name);
+// function makeFunc() {
+//   var name = "Pratham";
+//   function displayName() {
+//     console.log(name);
+//   }
+//   return displayName;
+// }
+
+// var myFunc = makeFunc();
+// myFunc();
+
+function checkNumber() {
+  var num = 1;
+  function getNumber() {
+    console.log(num);
   }
-  return displayName;
+  num++;
+  return getNumber;
 }
 
-var myFunc = makeFunc();
-myFunc();
+const number = checkNumber();
+number();
