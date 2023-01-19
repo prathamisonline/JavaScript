@@ -7,3 +7,4 @@ console.log(numbers.filter((item, index) => numbers.indexOf(item) !== index));
 // console.log(numbers.slice(2, 5));
 numbers.splice(1, 0, 10);
 console.log(numbers);
+console.log(numbers.filter((item, index) => numbers.indexOf(item) !== index));
