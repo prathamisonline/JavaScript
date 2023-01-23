@@ -21,11 +21,11 @@ colors[color] = hexCode;
 
 // // this is how you can get colors from colors object
 
-// function getColor(key) {
-//   return colors[key];
-// }
+function getColor(key) {
+  return colors[key];
+}
 
-// console.log(colors["blue"]);
+console.log(colors["blue"]);
 
 // // For deleting a key value
 // delete colors.blue;

@@ -10,8 +10,16 @@ const temperatures = [
   { degrees: 64, isRecordTemp: false },
 ];
 
-const result = temperatures.some((temp) => temp.isRecordTemp == true);
-console.log(result);
+// const result = temperatures.some((temp) => (temp.isRecordTemp = true));
+// console.log(result);
 
-const newResult = temperatures.every((temp) => temp.isRecordTemp);
-console.log(newResult);
+// const newResult = temperatures.every((temp) => temp.isRecordTemp);
+// console.log(newResult);
+
+const newResult2 = temperatures.map((item, index) => ({
+  temp: item.degrees,
+  isRecordTemp: item.isRecordTemp,
+  location: (item.location = "india"),
+  index: index,
+}));
+console.log(newResult2);
